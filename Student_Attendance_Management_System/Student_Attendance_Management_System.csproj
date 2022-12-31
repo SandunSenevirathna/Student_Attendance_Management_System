@@ -63,6 +63,12 @@
     <Compile Include="Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\Collect\frmCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Collect\frmCollect.Designer.cs">
+      <DependentUpon>frmCollect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Menu\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Collect\frmCollect.resx">
+      <DependentUpon>frmCollect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Menu\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
@@ -148,6 +157,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Codes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_macos_minimize_50px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_businesswoman_127px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_127px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

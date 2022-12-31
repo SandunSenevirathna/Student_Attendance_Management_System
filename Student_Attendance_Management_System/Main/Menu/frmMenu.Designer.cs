@@ -31,20 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.lblTime = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaAdvenceTileButton6 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton5 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton4 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton3 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton2 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.btnCollect = new Guna.UI.WinForms.GunaAdvenceTileButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.timerDateTime = new System.Windows.Forms.Timer(this.components);
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,12 +70,19 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(762, 57);
+            this.gunaPanel1.Size = new System.Drawing.Size(864, 57);
             this.gunaPanel1.TabIndex = 0;
             // 
-            // gunaDragControl1
+            // pictureBox4
             // 
-            this.gunaDragControl1.TargetControl = this.gunaPanel1;
+            this.pictureBox4.BackColor = System.Drawing.Color.Black;
+            this.pictureBox4.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_account_40px;
+            this.pictureBox4.Location = new System.Drawing.Point(25, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(38, 36);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 38;
+            this.pictureBox4.TabStop = false;
             // 
             // lblUserName
             // 
@@ -89,17 +96,41 @@
             this.lblUserName.TabIndex = 37;
             this.lblUserName.Text = "MR. Buddhika";
             // 
-            // lblDate
+            // pictureBox2
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.BackColor = System.Drawing.Color.Black;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(359, 19);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(100, 21);
-            this.lblDate.TabIndex = 34;
-            this.lblDate.Text = "2021-02-31";
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_calendar_40px;
+            this.pictureBox2.Location = new System.Drawing.Point(328, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Animated = true;
+            this.btnClose.AnimationHoverSpeed = 0.07F;
+            this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BaseColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderColor = System.Drawing.Color.Black;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_cancel_50px;
+            this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnClose.Location = new System.Drawing.Point(812, 10);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnClose.OnHoverImage = null;
+            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTime
             // 
@@ -112,6 +143,33 @@
             this.lblTime.Size = new System.Drawing.Size(78, 21);
             this.lblTime.TabIndex = 33;
             this.lblTime.Text = "12:56:33";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_clock_40px;
+            this.pictureBox1.Location = new System.Drawing.Point(195, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Black;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(359, 19);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(100, 21);
+            this.lblDate.TabIndex = 34;
+            this.lblDate.Text = "2021-02-31";
+            // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this.gunaPanel1;
             // 
             // gunaAdvenceTileButton6
             // 
@@ -133,7 +191,7 @@
             this.gunaAdvenceTileButton6.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_Logout_Rounded_100px;
             this.gunaAdvenceTileButton6.ImageSize = new System.Drawing.Size(60, 60);
             this.gunaAdvenceTileButton6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceTileButton6.Location = new System.Drawing.Point(518, 313);
+            this.gunaAdvenceTileButton6.Location = new System.Drawing.Point(577, 308);
             this.gunaAdvenceTileButton6.Name = "gunaAdvenceTileButton6";
             this.gunaAdvenceTileButton6.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton6.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -168,7 +226,7 @@
             this.gunaAdvenceTileButton5.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_user_100px;
             this.gunaAdvenceTileButton5.ImageSize = new System.Drawing.Size(60, 60);
             this.gunaAdvenceTileButton5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceTileButton5.Location = new System.Drawing.Point(296, 313);
+            this.gunaAdvenceTileButton5.Location = new System.Drawing.Point(355, 308);
             this.gunaAdvenceTileButton5.Name = "gunaAdvenceTileButton5";
             this.gunaAdvenceTileButton5.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton5.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -203,7 +261,7 @@
             this.gunaAdvenceTileButton4.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_data_backup_100px;
             this.gunaAdvenceTileButton4.ImageSize = new System.Drawing.Size(60, 60);
             this.gunaAdvenceTileButton4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceTileButton4.Location = new System.Drawing.Point(73, 313);
+            this.gunaAdvenceTileButton4.Location = new System.Drawing.Point(132, 308);
             this.gunaAdvenceTileButton4.Name = "gunaAdvenceTileButton4";
             this.gunaAdvenceTileButton4.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton4.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -238,7 +296,7 @@
             this.gunaAdvenceTileButton3.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_settings_100px;
             this.gunaAdvenceTileButton3.ImageSize = new System.Drawing.Size(60, 60);
             this.gunaAdvenceTileButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceTileButton3.Location = new System.Drawing.Point(518, 109);
+            this.gunaAdvenceTileButton3.Location = new System.Drawing.Point(577, 104);
             this.gunaAdvenceTileButton3.Name = "gunaAdvenceTileButton3";
             this.gunaAdvenceTileButton3.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton3.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -273,7 +331,7 @@
             this.gunaAdvenceTileButton2.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_line_chart_100px;
             this.gunaAdvenceTileButton2.ImageSize = new System.Drawing.Size(60, 60);
             this.gunaAdvenceTileButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceTileButton2.Location = new System.Drawing.Point(296, 109);
+            this.gunaAdvenceTileButton2.Location = new System.Drawing.Point(355, 104);
             this.gunaAdvenceTileButton2.Name = "gunaAdvenceTileButton2";
             this.gunaAdvenceTileButton2.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton2.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -308,7 +366,7 @@
             this.btnCollect.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_barcode_reader_100px_1;
             this.btnCollect.ImageSize = new System.Drawing.Size(60, 60);
             this.btnCollect.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCollect.Location = new System.Drawing.Point(73, 109);
+            this.btnCollect.Location = new System.Drawing.Point(132, 104);
             this.btnCollect.Name = "btnCollect";
             this.btnCollect.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnCollect.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -323,64 +381,6 @@
             this.btnCollect.Text = "Collect";
             this.btnCollect.TextImageOffsetY = 10;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_account_40px;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 38;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_calendar_40px;
-            this.pictureBox2.Location = new System.Drawing.Point(328, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_clock_40px;
-            this.pictureBox1.Location = new System.Drawing.Point(195, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Animated = true;
-            this.btnClose.AnimationHoverSpeed = 0.07F;
-            this.btnClose.AnimationSpeed = 0.03F;
-            this.btnClose.BaseColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderColor = System.Drawing.Color.Black;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_cancel_50px;
-            this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnClose.Location = new System.Drawing.Point(710, 10);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnClose.OnHoverImage = null;
-            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
-            this.btnClose.Size = new System.Drawing.Size(40, 40);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // timerDateTime
             // 
             this.timerDateTime.Enabled = true;
@@ -391,7 +391,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(762, 526);
+            this.ClientSize = new System.Drawing.Size(864, 526);
             this.Controls.Add(this.gunaAdvenceTileButton6);
             this.Controls.Add(this.gunaAdvenceTileButton5);
             this.Controls.Add(this.gunaAdvenceTileButton4);
@@ -403,6 +403,7 @@
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

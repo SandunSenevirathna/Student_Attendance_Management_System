@@ -30,5 +30,10 @@ namespace Student_Attendance_Management_System.Menu
             lblDate.Text = DateTime.Now.ToString("yyyy-MM-d");
             lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -113,6 +113,16 @@ namespace Student_Attendance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_businesswoman_127px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_businesswoman_127px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_calendar_40px {
             get {
                 object obj = ResourceManager.GetObject("icons8_calendar_40px", resourceCulture);
@@ -176,6 +186,26 @@ namespace Student_Attendance_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_Logout_Rounded_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Logout_Rounded_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_macos_minimize_50px_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_macos_minimize_50px_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_127px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_male_user_127px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

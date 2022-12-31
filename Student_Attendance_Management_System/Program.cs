@@ -1,4 +1,5 @@
 ﻿using Student_Attendance_Management_System.Login;
+using Student_Attendance_Management_System.Main.Collect;
 using Student_Attendance_Management_System.Menu;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,9 @@ namespace Student_Attendance_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu());
+            Application.Run(new frmCollect());
+
+            //Application.Run(new frmMenu());
             //Application.Run(new frmLogin());
         }
     }
