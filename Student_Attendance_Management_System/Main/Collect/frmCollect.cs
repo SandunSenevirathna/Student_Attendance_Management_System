@@ -33,5 +33,10 @@ namespace Student_Attendance_Management_System.Main.Collect
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void timerDateTime_Tick(object sender, EventArgs e)
+        {
+            lblDateTime.Text = "• Date : " + DateTime.Now.ToString("yyyy-MM-dd") + "  • Time : " + DateTime.Now.ToString("HH:mm:ss");
+
+        }
     }
 }

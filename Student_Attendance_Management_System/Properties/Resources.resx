@@ -139,14 +139,14 @@
   <data name="icons8_login_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_login_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_fingerprint_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_fingerprint_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logo 2022 w" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo 2022 w.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_businesswoman_127px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_businesswoman_127px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_settings_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_settings_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_data_backup_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_data_backup_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +154,14 @@
   <data name="icons8_cancel_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_cancel_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_settings_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_settings_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_account_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_account_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_male_user_127px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_male_user_127px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_barcode_reader_100px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_barcode_reader_100px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +175,7 @@
   <data name="icons8_Logout_Rounded_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Logout_Rounded_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_male_user_127px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_male_user_127px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_fingerprint_35px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_fingerprint_35px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

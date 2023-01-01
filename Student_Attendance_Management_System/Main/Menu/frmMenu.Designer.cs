@@ -212,7 +212,7 @@
             this.gunaAdvenceTileButton5.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceTileButton5.AnimationSpeed = 0.03F;
             this.gunaAdvenceTileButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceTileButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(100)))), ((int)(((byte)(102)))));
+            this.gunaAdvenceTileButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(80)))), ((int)(((byte)(97)))));
             this.gunaAdvenceTileButton5.BorderColor = System.Drawing.Color.Black;
             this.gunaAdvenceTileButton5.CheckedBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton5.CheckedBorderColor = System.Drawing.Color.Black;
@@ -247,7 +247,7 @@
             this.gunaAdvenceTileButton4.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceTileButton4.AnimationSpeed = 0.03F;
             this.gunaAdvenceTileButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceTileButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(52)))), ((int)(((byte)(49)))));
+            this.gunaAdvenceTileButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(101)))), ((int)(((byte)(103)))));
             this.gunaAdvenceTileButton4.BorderColor = System.Drawing.Color.Black;
             this.gunaAdvenceTileButton4.CheckedBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceTileButton4.CheckedBorderColor = System.Drawing.Color.Black;
