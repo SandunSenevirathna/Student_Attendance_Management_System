@@ -20,11 +20,11 @@ namespace Student_Attendance_Management_System.Main.Collect
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            //frmMenu frmMenu =  new frmMenu();
-            //this.Hide();
-            //frmMenu.ShowDialog();
+            frmMenu frmMenu = new frmMenu();
+            this.Hide();
+            frmMenu.ShowDialog();
 
-            Application.Exit();
+            //Application.Exit();
 
         }
 

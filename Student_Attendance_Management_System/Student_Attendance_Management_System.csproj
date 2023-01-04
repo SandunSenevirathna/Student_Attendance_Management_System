@@ -46,7 +46,7 @@
     </Reference>
     <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+      <HintPath>D:\Application.exe\Developer\C# XL LIB\DLL\_Getintopc.com_GunaUI_Framework_2.0.1.4\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
@@ -58,6 +58,9 @@
     <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Application.exe\Developer\C# XL LIB\DLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysqlbackup">
+      <HintPath>D:\Application.exe\Developer\C# XL LIB\DLL\mysqlbackup.dll</HintPath>
     </Reference>
     <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.2.2.4\lib\net471\MySqlConnector.dll</HintPath>
@@ -102,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codes\Database.cs" />
+    <Compile Include="Codes\_Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,11 +126,17 @@
     <Compile Include="Main\Menu\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Setting\Form1.cs">
+    <Compile Include="Main\Setting\frmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Setting\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Main\Setting\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Setting\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Setting\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Users\frmUser.cs">
       <SubType>Form</SubType>
@@ -143,8 +155,11 @@
     <EmbeddedResource Include="Main\Menu\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Setting\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Main\Setting\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Setting\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Users\frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
@@ -232,6 +247,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_fingerprint_35px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\little-girl-reading-book-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention-please.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_classroom_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_elective_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Student_Male_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leaving_queue_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Students_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

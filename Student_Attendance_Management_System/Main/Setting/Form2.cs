@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Attendance_Management_System.Login
+namespace Student_Attendance_Management_System.Main.Setting
 {
-    public partial class frmLogin : Form
+    public partial class Form2 : Form
     {
-        public frmLogin()
+        public Form2()
         {
             InitializeComponent();
         }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
     }
 }

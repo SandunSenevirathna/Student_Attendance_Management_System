@@ -35,12 +35,11 @@
             this.btnLogin = new Guna.UI.WinForms.GunaButton();
             this.forForm = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.forGif = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -144,6 +143,17 @@
             // 
             this.forGif.TargetControl = this.gunaPictureBox1;
             // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = global::Student_Attendance_Management_System.Properties.Resources._5078a05eb1b6847d93383eaa4c0ed500;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(274, -1);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(583, 451);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 0;
+            this.gunaPictureBox1.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Student_Attendance_Management_System.Properties.Resources.Logo_2022_w;
@@ -178,21 +188,6 @@
             this.btnClose.TabIndex = 1;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::Student_Attendance_Management_System.Properties.Resources._5078a05eb1b6847d93383eaa4c0ed500;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(274, -1);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(583, 451);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,12 +202,10 @@
             this.Controls.Add(this.gunaPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
-            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,6 +221,5 @@
         private Guna.UI.WinForms.GunaButton btnLogin;
         private Guna.UI.WinForms.GunaDragControl forForm;
         private Guna.UI.WinForms.GunaDragControl forGif;
-        private System.Windows.Forms.Timer timer1;
     }
 }

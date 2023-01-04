@@ -5,13 +5,15 @@ using System.Security.Cryptography;
 using Student_Attendance_Management_System.Codes;
 using System.Data;
 using System.Drawing;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Student_Attendance_Management_System.Menu;
+
 
 namespace Student_Attendance_Management_System.Main.Users
 {
     public partial class frmUser : Form
     {
         NotifyIcon notifyIcon = new NotifyIcon();
+        string Result;
 
         public frmUser()
         {
@@ -26,7 +28,11 @@ namespace Student_Attendance_Management_System.Main.Users
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+
+            frmMenu frmMenu = new frmMenu();
+            this.Hide();
+            frmMenu.ShowDialog();
         }
 
         public void ClearText()
@@ -74,7 +80,7 @@ namespace Student_Attendance_Management_System.Main.Users
 
             string passwordHashString = Convert.ToBase64String(SHA256.Create().ComputeHash(System.Text.Encoding.UTF8.GetBytes(userPassword)));
             // MessageBox.Show(userPassword + " = " + passwordHashString);
-            //MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd").ToString());
+      
 
             DateTime currentDate = DateTime.Now;
 
@@ -82,9 +88,9 @@ namespace Student_Attendance_Management_System.Main.Users
             {
                 Database.insert(
                     @"INSERT INTO `user`
-                    (`firstname`, `lastname`, `position`, `username`, `password`, `registerdate`) 
+                    (`username`,  `password`, `firstname`, `lastname`, `position`, `registerdate`) 
                     VALUES
-                    ('" + txtFirstName.Text + "', '" + txtLastName.Text + "', '" + cmbPosition.Text + "', '" + txtUsername.Text + "', '" + passwordHashString + "', '" + currentDate.ToString("yyyy-MM-dd") + "')"
+                    ('" + txtUsername.Text + "', '" + passwordHashString + "', '" + txtFirstName.Text + "', '" + txtLastName.Text + "', '" + cmbPosition.Text + "', '" + currentDate.ToString("yyyy-MM-dd") + "')"
 
                 );
 
@@ -105,38 +111,39 @@ namespace Student_Attendance_Management_System.Main.Users
 
         private void UpdateData(string userPassword)
         {
-
-            string passwordHashString = Convert.ToBase64String(SHA256.Create().ComputeHash(System.Text.Encoding.UTF8.GetBytes(userPassword)));
-            // MessageBox.Show(userPassword + " = " + passwordHashString);
-            //MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd").ToString());
-
-            DateTime currentDate = DateTime.Now;
-
-            if (txtFirstName.Text != string.Empty && txtLastName.Text != string.Empty && txtUsername.Text != string.Empty && txtPassword.Text != string.Empty && cmbPosition.Text != string.Empty)
-            {
-                Database.insert(
-                    @"UPDATE `user` SET `firstname`='"+txtFirstName.Text+"',`lastname`='"+txtLastName.Text+"',`position`='"+cmbPosition.Text+"',`password`='"+ passwordHashString + "' WHERE `username`= '"+txtUsername.Text+"'"
-
-                );;
-
-                notifyIcon.ShowBalloonTip(3000, "SAS", "This is a Update Notifi.", ToolTipIcon.Info);
-                ClearText();
-            }
-
-            else
-            {
-                txtUsername.Focus();
-                notifyIcon.ShowBalloonTip(3000, "SAS", "Text Boxs are Empty", ToolTipIcon.Error);
+          
+                 string passwordHashString = Convert.ToBase64String(SHA256.Create().ComputeHash(System.Text.Encoding.UTF8.GetBytes(userPassword)));
+                // MessageBox.Show(userPassword + " = " + passwordHashString);
 
 
-            }
+                DateTime currentDate = DateTime.Now;
+
+                if (txtFirstName.Text != string.Empty && txtLastName.Text != string.Empty && txtUsername.Text != string.Empty && txtPassword.Text != string.Empty && cmbPosition.Text != string.Empty)
+                {
+                    Database.insert(
+                        @"UPDATE `user` SET `firstname`='" + txtFirstName.Text + "',`lastname`='" + txtLastName.Text + "',`position`='" + cmbPosition.Text + "',`password`='" + passwordHashString + "' WHERE `username`= '" + txtUsername.Text + "'"
+
+                    ); ;
+
+                    notifyIcon.ShowBalloonTip(3000, "SAS", "This is a Update Notifi.", ToolTipIcon.Info);
+                    ClearText();
+                }
+
+                else
+                {
+                    txtUsername.Focus();
+                    notifyIcon.ShowBalloonTip(3000, "SAS", "Text Boxs are Empty", ToolTipIcon.Error);
+
+
+                }
+            
+
+            
 
         }
 
         private void DeleteData(string Username)
         {
-
-           
 
             if (txtFirstName.Text != string.Empty && txtLastName.Text != string.Empty && txtUsername.Text != string.Empty  && cmbPosition.Text != string.Empty)
             {
@@ -166,6 +173,10 @@ namespace Student_Attendance_Management_System.Main.Users
         {
             UpdateData(txtPassword.Text);
         }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteData(txtUsername.Text);
+        }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
@@ -187,9 +198,5 @@ namespace Student_Attendance_Management_System.Main.Users
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            DeleteData(txtUsername.Text);
-        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using OfficeOpenXml;
 using Student_Attendance_Management_System.Codes;
+using Student_Attendance_Management_System.Menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,11 @@ using System.Windows.Forms;
 
 namespace Student_Attendance_Management_System.Main.Setting
 {
-    public partial class Form1 : Form
+    public partial class frmSetting : Form
     {
         string filePath; // to save file path
 
-        public Form1()
+        public frmSetting()
         {
             InitializeComponent();
         }
@@ -58,6 +59,14 @@ namespace Student_Attendance_Management_System.Main.Setting
                     }
                 }
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+            frmMenu frmMenu = new frmMenu();
+            this.Hide();
+            frmMenu.ShowDialog();
         }
     }
 }
