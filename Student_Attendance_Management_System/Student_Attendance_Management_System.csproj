@@ -126,17 +126,29 @@
     <Compile Include="Main\Menu\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\Setting\frmBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Setting\frmBatch.Designer.cs">
+      <DependentUpon>frmBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Setting\frmPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Setting\frmPosition.Designer.cs">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Setting\frmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main\Setting\frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Setting\Form2.cs">
+    <Compile Include="Main\Setting\frmStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Setting\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Main\Setting\frmStudents.Designer.cs">
+      <DependentUpon>frmStudents.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Users\frmUser.cs">
       <SubType>Form</SubType>
@@ -155,11 +167,17 @@
     <EmbeddedResource Include="Main\Menu\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\Setting\frmBatch.resx">
+      <DependentUpon>frmBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Setting\frmPosition.resx">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\Setting\frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Setting\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Main\Setting\frmStudents.resx">
+      <DependentUpon>frmStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Users\frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
@@ -274,6 +292,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Students_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leaving_queue_skin_type_2_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_100px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_students_100px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,8 @@ using Student_Attendance_Management_System.Codes;
 using System.Data;
 using System.Drawing;
 using Student_Attendance_Management_System.Menu;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Collections.Generic;
 
 namespace Student_Attendance_Management_System.Main.Users
 {
@@ -23,6 +24,7 @@ namespace Student_Attendance_Management_System.Main.Users
 
             notifyIcon.Icon = SystemIcons.Information;
             notifyIcon.Visible = true;
+            cmbPositionFill();
 
         }
 
@@ -33,6 +35,21 @@ namespace Student_Attendance_Management_System.Main.Users
             frmMenu frmMenu = new frmMenu();
             this.Hide();
             frmMenu.ShowDialog();
+        }
+
+        private void cmbPositionFill()
+        {
+            List<string> size = new List<string>();
+
+            DataTable dt = Database.selectData(@"SELECT *  FROM `position` ");
+
+            foreach (DataRow item in dt.Rows)
+            {
+               size.Add(item[0].ToString());
+                
+            }
+            cmbPosition.DataSource = size;
+
         }
 
         public void ClearText()

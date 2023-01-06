@@ -1,6 +1,7 @@
 ﻿
 using Student_Attendance_Management_System.Login;
 using Student_Attendance_Management_System.Main.Collect;
+using Student_Attendance_Management_System.Main.Setting;
 using Student_Attendance_Management_System.Main.Users;
 using Student_Attendance_Management_System.Menu;
 using System;
@@ -21,9 +22,9 @@ namespace Student_Attendance_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmUser());
+            Application.Run(new frmStudents());
             //Application.Run(new frmCollect());
-           Application.Run(new frmMenu());
+          //Application.Run(new frmMenu());
             //Application.Run(new frmLogin());
         }
     }

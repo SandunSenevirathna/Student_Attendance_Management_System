@@ -30,7 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.txtUsername = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -47,11 +49,9 @@
             this.btnDelete = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.btnShowPassword = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnShowPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShowPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanel1
@@ -66,6 +66,17 @@
             this.gunaPanel1.Size = new System.Drawing.Size(478, 57);
             this.gunaPanel1.TabIndex = 1;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(53)))), ((int)(((byte)(64)))));
+            this.pictureBox4.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_account_40px;
+            this.pictureBox4.Location = new System.Drawing.Point(25, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(38, 36);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 38;
+            this.pictureBox4.TabStop = false;
+            // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
@@ -77,6 +88,32 @@
             this.lblUserName.Size = new System.Drawing.Size(145, 21);
             this.lblUserName.TabIndex = 37;
             this.lblUserName.Text = "User Registration ";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Animated = true;
+            this.btnClose.AnimationHoverSpeed = 0.07F;
+            this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BaseColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderColor = System.Drawing.Color.Black;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_cancel_50px;
+            this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnClose.Location = new System.Drawing.Point(426, 10);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnClose.OnHoverImage = null;
+            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // gunaElipse1
             // 
@@ -224,18 +261,6 @@
             this.cmbPosition.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPosition.ForeColor = System.Drawing.Color.Black;
             this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Items.AddRange(new object[] {
-            "Professor",
-            "Instructor",
-            "Lecturer",
-            "Department chair",
-            "Dean",
-            "Provost",
-            "President",
-            "Administrative assistant",
-            "Librarian",
-            "IT support staff",
-            "Facilities management staff"});
             this.cmbPosition.Location = new System.Drawing.Point(168, 341);
             this.cmbPosition.Name = "cmbPosition";
             this.cmbPosition.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -380,43 +405,6 @@
             this.btnShowPassword.TabStop = false;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(53)))), ((int)(((byte)(64)))));
-            this.pictureBox4.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_account_40px;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 38;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Animated = true;
-            this.btnClose.AnimationHoverSpeed = 0.07F;
-            this.btnClose.AnimationSpeed = 0.03F;
-            this.btnClose.BaseColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderColor = System.Drawing.Color.Black;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::Student_Attendance_Management_System.Properties.Resources.icons8_cancel_50px;
-            this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnClose.Location = new System.Drawing.Point(426, 10);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnClose.OnHoverImage = null;
-            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
-            this.btnClose.Size = new System.Drawing.Size(40, 40);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,8 +432,8 @@
             this.Text = "frmUser";
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnShowPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShowPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
