@@ -13,6 +13,8 @@ namespace Student_Attendance_Management_System.Main.Setting
 {
     public partial class frmBatch : Form
     {
+        bool alreadyExists;
+
         public frmBatch()
         {
             InitializeComponent();
@@ -72,10 +74,47 @@ namespace Student_Attendance_Management_System.Main.Setting
         {
             if (txtBatch.Text != string.Empty)
             {
-                Database.insert(@"INSERT INTO `batch`(`batch`) VALUES ('" + txtBatch.Text + "')");
-                txtBatch.Clear();
-                txtBatch.Focus();
-                dgvBFill();
+                if (dgvBatch.Rows.Count == 0)
+                {
+                    Database.insert(@"INSERT INTO `batch`(`batch`) VALUES ('" + txtBatch.Text + "')");
+                    txtBatch.Clear();
+                    txtBatch.Focus();
+                    dgvBFill();
+                }
+                else
+                {
+                    alreadyExists = false;
+
+                    for (int i = 0; i < dgvBatch.Rows.Count; ++i) // kalin thiyana
+                    {
+                        if (dgvBatch.Rows[i].Cells[0].Value.ToString() == txtBatch.Text)
+                        {
+
+                            alreadyExists = true;
+                            MessageBox.Show("This Batch is already exists.");
+                            txtBatch.SelectAll();
+                            break;
+
+                            
+                        }
+                        
+                    }
+
+                    if (alreadyExists == false)
+                    {
+                        Database.insert(@"INSERT INTO `batch`(`batch`) VALUES ('" + txtBatch.Text + "')");
+                        txtBatch.Clear();
+                        txtBatch.Focus();
+                        dgvBFill();
+                        
+
+                    }
+
+
+
+                }
+                
+                
             }
         }
 
@@ -83,10 +122,49 @@ namespace Student_Attendance_Management_System.Main.Setting
         {
             if (txtLectureHall.Text != string.Empty)
             {
-                Database.insert(@"INSERT INTO `lecturehall`(`lecturehall`) VALUES ('" + txtLectureHall.Text + "')");
-                txtLectureHall.Clear();
-                txtLectureHall.Focus();
-                dgvLFill();
+
+                if (dgvLectureHall.Rows.Count == 0)
+                {
+                    Database.insert(@"INSERT INTO `lecturehall`(`lecturehall`) VALUES ('" + txtLectureHall.Text + "')");
+                    txtLectureHall.Clear();
+                    txtLectureHall.Focus();
+                    dgvLFill();
+                }
+                else
+                {
+                    alreadyExists = false;
+
+                    for (int i = 0; i < dgvLectureHall.Rows.Count; ++i) // kalin thiyana
+                    {
+                        if (dgvLectureHall.Rows[i].Cells[0].Value.ToString() == txtLectureHall.Text)
+                        {
+
+                            alreadyExists = true;
+                            MessageBox.Show("This LectureHall is already exists.");
+                            txtLectureHall.SelectAll();
+                            break;
+
+
+                        }
+
+                    }
+
+                    if (alreadyExists == false)
+                    {
+                        Database.insert(@"INSERT INTO `lecturehall`(`lecturehall`) VALUES ('" + txtLectureHall.Text + "')");
+                        txtLectureHall.Clear();
+                        txtLectureHall.Focus();
+                        dgvLFill();
+
+
+                    }
+
+
+
+                }
+                
+
+                
             }
         }
 
@@ -213,6 +291,20 @@ namespace Student_Attendance_Management_System.Main.Setting
             }
         }
 
-       
+        private void txtBatch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '\\') || (e.KeyChar == '\'') || (e.KeyChar == ';') || (e.KeyChar == '"') || (e.KeyChar == ','))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLectureHall_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '\\') || (e.KeyChar == '\'') || (e.KeyChar == ';') || (e.KeyChar == '"') || (e.KeyChar == ','))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -123,6 +123,16 @@ namespace Student_Attendance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_barcode_reader_100px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_barcode_reader_100px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_businesswoman_127px {
             get {
                 object obj = ResourceManager.GetObject("icons8_businesswoman_127px", resourceCulture);
@@ -163,6 +173,16 @@ namespace Student_Attendance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_classroom_100px_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_classroom_100px_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_clock_40px {
             get {
                 object obj = ResourceManager.GetObject("icons8_clock_40px", resourceCulture);
@@ -186,6 +206,16 @@ namespace Student_Attendance_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_elective_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_elective_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_elective_100px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_elective_100px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

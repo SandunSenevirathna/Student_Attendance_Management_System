@@ -20,7 +20,6 @@ namespace Student_Attendance_Management_System.Main.Setting
         string filePath; // to save file path
 
 
-
         public frmSetting()
         {
             InitializeComponent();
@@ -61,7 +60,7 @@ namespace Student_Attendance_Management_System.Main.Setting
                         // Loop through the rows in the worksheet
                         for (int row = 1; row <= worksheet.Dimension.End.Row; row++)
                         {
-                            // Get the values in the first and second columns
+                            // Get the values in the 1 to 4 columns
                             string col1 = worksheet.Cells[row, 1].Value.ToString();
                             string col2 = worksheet.Cells[row, 2].Value.ToString();
                             string col3 = worksheet.Cells[row, 3].Value.ToString();
@@ -69,7 +68,7 @@ namespace Student_Attendance_Management_System.Main.Setting
 
 
 
-                            Database.insert(@"INSERT INTO `student`(`registrationNumber`, `name`, `department`, `batch`) VALUES ('" + col1 + "', '" + col2 + "', '" + col3 + "', '" + col4 + "')");
+                            Database.insert(@"INSERT INTO `student`(`registrationNumber`, `name`, `department`, `batch`) VALUES ('" + col1 + "', UPPER('" + col2 + "'), UPPER('" + col3 + "'), '" + col4 + "')");
                             // Insert the values into the database
 
                         }
@@ -86,47 +85,6 @@ namespace Student_Attendance_Management_System.Main.Setting
             }
         }
 
-
-        private void btnBrowsePositionFile_Click(object sender, EventArgs e)
-        {
-            SetFilePath();
-
-
-            if (filePath != null)
-            {
-
-                using (var excel = new ExcelPackage(new FileInfo(filePath)))
-                {
-                    // Get the first worksheet in the Excel file
-                    var worksheet = excel.Workbook.Worksheets[0];
-
-                    if (worksheet.Dimension.End.Column == 1)
-                    {
-                        Database.insert(@"DELETE FROM `position` WHERE 1");
-
-                        // Loop through the rows in the worksheet
-                        for (int row = 1; row <= worksheet.Dimension.End.Row; row++)
-                        {
-                            // Get the values in the first and second columns
-                            string col1 = worksheet.Cells[row, 1].Value.ToString();
-
-
-                            Database.insert(@"INSERT INTO `position`(`position`) VALUES ('" + col1 + "')");
-                            // Insert the values into the database
-
-
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Position Table and this Worksheets Column count not match.");
-                    }
-
-
-
-                }
-            }
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -237,6 +195,61 @@ namespace Student_Attendance_Management_System.Main.Setting
             frmStudents frmStudentsfrm = new frmStudents();
             this.Hide();
             frmStudentsfrm.ShowDialog();
+        }
+
+        private void btnSubjects_Click(object sender, EventArgs e)
+        {
+            frmSetting frmoverlay = new frmSetting();
+
+            try
+            {
+
+                using (frmSubject frm = new frmSubject())
+                {
+
+                    frmoverlay.StartPosition = FormStartPosition.Manual;
+                    frmoverlay.FormBorderStyle = FormBorderStyle.None;
+                    frmoverlay.Opacity = .70d;
+                    frmoverlay.BackColor = Color.Black;
+                    frmoverlay.WindowState = FormWindowState.Maximized;
+                    frmoverlay.TopMost = true;
+                    frmoverlay.Location = this.Location;
+                    frmoverlay.ShowInTaskbar = false;
+                    frmoverlay.Show();
+
+                    frmoverlay.grpSpreadSheet.Visible = false;
+                    frmoverlay.btnLectures.Visible = false;
+                    frmoverlay.btnStudent.Visible = false;
+                    frmoverlay.btnBatch.Visible = false;
+                    frmoverlay.btnPosition.Visible = false;
+                    frmoverlay.btnSubjects.Visible = false;
+                    frmoverlay.btnClose.Visible = false;
+                    frmoverlay.imgSetting.Visible = false;
+                    frmoverlay.lblSetting.Visible = false;
+
+
+
+                    frm.Owner = frmoverlay;
+                    frm.ShowDialog();
+                    frmoverlay.Dispose();
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally { frmoverlay.Dispose(); }
+        }
+
+        private void btnLectures_Click(object sender, EventArgs e)
+        {
+            frmLectures frmLectures = new frmLectures();
+            this.Hide();
+            frmLectures.ShowDialog();
         }
     }
 }

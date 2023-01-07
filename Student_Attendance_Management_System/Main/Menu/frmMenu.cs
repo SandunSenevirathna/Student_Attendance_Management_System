@@ -36,10 +36,6 @@ namespace Student_Attendance_Management_System.Menu
 
         }
 
-        private void frmMenu_Load(object sender, EventArgs e)
-        {
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             frmLogin frmLogin = new frmLogin();
@@ -54,10 +50,6 @@ namespace Student_Attendance_Management_System.Menu
             frmUser.ShowDialog();
         }
 
-        private void OpacityTimer_Tick(object sender, EventArgs e)
-        {
-            Opacity += .2;
-        }
 
         private void btnCollect_Click(object sender, EventArgs e)
         {

@@ -67,9 +67,9 @@ namespace Student_Attendance_Management_System.Main.Setting
             }
         }
 
-        private void AutoFillText()
+        private void AutoFillText( string RegistrationNumber)
         {
-            DataTable dt = Database.selectData(@"SELECT  `name`, `department`, `batch` FROM `student` WHERE `registrationNumber` = '" + txtRegistrationNumber.Text + "'");
+            DataTable dt = Database.selectData(@"SELECT  `name`, `department`, `batch` FROM `student` WHERE `registrationNumber` = '" + RegistrationNumber + "'");
             if (dt.Rows.Count == 1)
             {
                 txtStudentName.Text = dt.Rows[0][0].ToString();
@@ -138,7 +138,7 @@ namespace Student_Attendance_Management_System.Main.Setting
 
         private void txtRegistrationNumber_TextChanged(object sender, EventArgs e)
         {
-            AutoFillText();
+            AutoFillText(txtRegistrationNumber.Text);
         }
 
         private void dgvStudent_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -278,6 +278,5 @@ namespace Student_Attendance_Management_System.Main.Setting
             ButtonPressWithoutSymbols(e);
 
         }
-
     }
 }

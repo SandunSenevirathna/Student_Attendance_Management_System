@@ -177,7 +177,7 @@
             this.btnLogout.AnimationHoverSpeed = 0.07F;
             this.btnLogout.AnimationSpeed = 0.03F;
             this.btnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogout.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(117)))), ((int)(((byte)(93)))));
+            this.btnLogout.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(78)))), ((int)(((byte)(62)))));
             this.btnLogout.BorderColor = System.Drawing.Color.Black;
             this.btnLogout.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnLogout.CheckedBorderColor = System.Drawing.Color.Black;
@@ -213,7 +213,7 @@
             this.btnUsers.AnimationHoverSpeed = 0.07F;
             this.btnUsers.AnimationSpeed = 0.03F;
             this.btnUsers.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsers.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(80)))), ((int)(((byte)(97)))));
+            this.btnUsers.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(51)))), ((int)(((byte)(62)))));
             this.btnUsers.BorderColor = System.Drawing.Color.Black;
             this.btnUsers.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnUsers.CheckedBorderColor = System.Drawing.Color.Black;
@@ -249,7 +249,7 @@
             this.btnBackup.AnimationHoverSpeed = 0.07F;
             this.btnBackup.AnimationSpeed = 0.03F;
             this.btnBackup.BackColor = System.Drawing.Color.Transparent;
-            this.btnBackup.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(101)))), ((int)(((byte)(103)))));
+            this.btnBackup.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(40)))));
             this.btnBackup.BorderColor = System.Drawing.Color.Black;
             this.btnBackup.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnBackup.CheckedBorderColor = System.Drawing.Color.Black;
@@ -284,7 +284,7 @@
             this.btnSetting.AnimationHoverSpeed = 0.07F;
             this.btnSetting.AnimationSpeed = 0.03F;
             this.btnSetting.BackColor = System.Drawing.Color.Transparent;
-            this.btnSetting.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(86)))), ((int)(((byte)(161)))));
+            this.btnSetting.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
             this.btnSetting.BorderColor = System.Drawing.Color.Black;
             this.btnSetting.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnSetting.CheckedBorderColor = System.Drawing.Color.Black;
@@ -355,7 +355,7 @@
             this.btnCollect.AnimationHoverSpeed = 0.07F;
             this.btnCollect.AnimationSpeed = 0.03F;
             this.btnCollect.BackColor = System.Drawing.Color.Transparent;
-            this.btnCollect.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(153)))), ((int)(((byte)(34)))));
+            this.btnCollect.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(0)))));
             this.btnCollect.BorderColor = System.Drawing.Color.Black;
             this.btnCollect.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnCollect.CheckedBorderColor = System.Drawing.Color.Black;
@@ -408,7 +408,6 @@
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu";
-            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

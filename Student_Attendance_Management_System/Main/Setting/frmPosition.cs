@@ -13,6 +13,7 @@ namespace Student_Attendance_Management_System.Main.Setting
 {
     public partial class frmPosition : Form
     {
+        bool alreadyExists;
         public frmPosition()
         {
             InitializeComponent();
@@ -35,8 +36,9 @@ namespace Student_Attendance_Management_System.Main.Setting
             if(txtPosition.Text != string.Empty)
             {
                 Database.insert(@"DELETE FROM `position` WHERE `position`='"+txtPosition.Text+"' ");
-                txtPosition.Clear();
-                txtPosition.Focus();
+                txtPosition.Clear(); 
+                txtPosition.SelectAll();
+
                 dgvFill();
             }
 
@@ -46,10 +48,47 @@ namespace Student_Attendance_Management_System.Main.Setting
         {
             if (txtPosition.Text != string.Empty)
             {
-                Database.insert(@"INSERT INTO `position`(`position`) VALUES ('" + txtPosition.Text + "')");
-                txtPosition.Clear();
-                txtPosition.Focus();
-                dgvFill();
+                if (dgvPosition.Rows.Count == 0)
+                {
+                    Database.insert(@"INSERT INTO `position`(`position`) VALUES ('" + txtPosition.Text + "')");
+                    txtPosition.Clear();
+                    txtPosition.SelectAll();
+                    dgvFill();
+                }
+                else
+                {
+                    alreadyExists = false;
+
+                    for (int i = 0; i < dgvPosition.Rows.Count; ++i) // kalin thiyana
+                    {
+                        if (dgvPosition.Rows[i].Cells[0].Value.ToString() == txtPosition.Text)
+                        {
+
+                            alreadyExists = true;
+                            MessageBox.Show("This Position is already exists.");
+                            txtPosition.SelectAll();
+                            break;
+
+
+                        }
+
+                    }
+
+                    if (alreadyExists == false)
+                    {
+                        Database.insert(@"INSERT INTO `position`(`position`) VALUES ('" + txtPosition.Text + "')");
+                        txtPosition.Clear();
+                        txtPosition.SelectAll();
+                        dgvFill();
+
+
+                    }
+
+
+
+                }
+               
+               
             }
         }
 
@@ -98,7 +137,7 @@ namespace Student_Attendance_Management_System.Main.Setting
             if(e.KeyCode== Keys.Escape)
             {
                 txtPosition.Clear();
-                txtPosition.Focus();
+                txtPosition.SelectAll();
             }
         }
 
@@ -110,13 +149,22 @@ namespace Student_Attendance_Management_System.Main.Setting
                 DataGridViewRow selectedRow = dgvPosition.Rows[index];
 
                 txtPosition.Text = selectedRow.Cells[0].Value.ToString();
-                txtPosition.Focus();
+                txtPosition.SelectAll();
+
 
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtPosition_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '\\') || (e.KeyChar == '\'') || (e.KeyChar == ';') || (e.KeyChar == '"') || (e.KeyChar == ','))
+            {
+                e.Handled = true;
             }
         }
     }

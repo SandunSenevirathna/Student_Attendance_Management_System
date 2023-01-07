@@ -126,6 +126,6 @@ help you sort, filter, and manipulate the data as needed.</value>
     <value>19, 4</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+    <value>39</value>
   </metadata>
 </root>

@@ -182,6 +182,7 @@
             this.txtPosition.TrailingIcon = null;
             this.txtPosition.UseSystemPasswordChar = false;
             this.txtPosition.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPosition_KeyDown);
+            this.txtPosition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosition_KeyPress);
             this.txtPosition.TextChanged += new System.EventHandler(this.txtPosition_TextChanged);
             // 
             // btnInsert

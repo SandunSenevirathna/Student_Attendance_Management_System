@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSetting));
             this.grpSpreadSheet = new Guna.UI.WinForms.GunaGroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBrowsePositionFile = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBrowseStudentFile = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -55,8 +53,6 @@
             this.grpSpreadSheet.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.grpSpreadSheet.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.grpSpreadSheet.Controls.Add(this.label1);
-            this.grpSpreadSheet.Controls.Add(this.btnBrowsePositionFile);
-            this.grpSpreadSheet.Controls.Add(this.gunaAdvenceButton2);
             this.grpSpreadSheet.Controls.Add(this.btnBrowseStudentFile);
             this.grpSpreadSheet.Controls.Add(this.gunaAdvenceButton1);
             this.grpSpreadSheet.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -82,77 +78,6 @@
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnBrowsePositionFile
-            // 
-            this.btnBrowsePositionFile.Animated = true;
-            this.btnBrowsePositionFile.AnimationHoverSpeed = 0.07F;
-            this.btnBrowsePositionFile.AnimationSpeed = 0.03F;
-            this.btnBrowsePositionFile.BackColor = System.Drawing.Color.Transparent;
-            this.btnBrowsePositionFile.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.btnBrowsePositionFile.BorderColor = System.Drawing.Color.Black;
-            this.btnBrowsePositionFile.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnBrowsePositionFile.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBrowsePositionFile.CheckedForeColor = System.Drawing.Color.White;
-            this.btnBrowsePositionFile.CheckedImage = null;
-            this.btnBrowsePositionFile.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnBrowsePositionFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBrowsePositionFile.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBrowsePositionFile.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBrowsePositionFile.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowsePositionFile.ForeColor = System.Drawing.Color.White;
-            this.btnBrowsePositionFile.Image = null;
-            this.btnBrowsePositionFile.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBrowsePositionFile.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBrowsePositionFile.Location = new System.Drawing.Point(723, 59);
-            this.btnBrowsePositionFile.Name = "btnBrowsePositionFile";
-            this.btnBrowsePositionFile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(45)))));
-            this.btnBrowsePositionFile.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBrowsePositionFile.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBrowsePositionFile.OnHoverImage = null;
-            this.btnBrowsePositionFile.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBrowsePositionFile.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBrowsePositionFile.Radius = 5;
-            this.btnBrowsePositionFile.Size = new System.Drawing.Size(204, 56);
-            this.btnBrowsePositionFile.TabIndex = 6;
-            this.btnBrowsePositionFile.Text = "Select Position File";
-            this.btnBrowsePositionFile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBrowsePositionFile.Click += new System.EventHandler(this.btnBrowsePositionFile_Click);
-            // 
-            // gunaAdvenceButton2
-            // 
-            this.gunaAdvenceButton2.Animated = true;
-            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.CheckedImage = null;
-            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.Image = null;
-            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(494, 59);
-            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
-            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(45)))));
-            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.OnHoverImage = null;
-            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.Radius = 5;
-            this.gunaAdvenceButton2.Size = new System.Drawing.Size(204, 56);
-            this.gunaAdvenceButton2.TabIndex = 5;
-            this.gunaAdvenceButton2.Text = "Select Lecture hall File";
-            this.gunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnBrowseStudentFile
             // 
             this.btnBrowseStudentFile.Animated = true;
@@ -174,7 +99,7 @@
             this.btnBrowseStudentFile.Image = null;
             this.btnBrowseStudentFile.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBrowseStudentFile.LineColor = System.Drawing.Color.Transparent;
-            this.btnBrowseStudentFile.Location = new System.Drawing.Point(29, 59);
+            this.btnBrowseStudentFile.Location = new System.Drawing.Point(248, 59);
             this.btnBrowseStudentFile.Name = "btnBrowseStudentFile";
             this.btnBrowseStudentFile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(45)))));
             this.btnBrowseStudentFile.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -210,7 +135,7 @@
             this.gunaAdvenceButton1.Image = null;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(262, 59);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(534, 59);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(45)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -390,6 +315,7 @@
             this.btnSubjects.TabIndex = 11;
             this.btnSubjects.Text = "Subjects";
             this.btnSubjects.TextImageOffsetY = 20;
+            this.btnSubjects.Click += new System.EventHandler(this.btnSubjects_Click);
             // 
             // btnLectures
             // 
@@ -425,6 +351,7 @@
             this.btnLectures.TabIndex = 10;
             this.btnLectures.Text = "Lectures";
             this.btnLectures.TextImageOffsetY = 20;
+            this.btnLectures.Click += new System.EventHandler(this.btnLectures_Click);
             // 
             // btnClose
             // 
@@ -485,8 +412,6 @@
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaCircleButton btnClose;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnBrowsePositionFile;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
         private Guna.UI.WinForms.GunaAdvenceTileButton btnStudent;
         private Guna.UI.WinForms.GunaAdvenceTileButton btnPosition;
         private Guna.UI.WinForms.GunaAdvenceTileButton btnBatch;
