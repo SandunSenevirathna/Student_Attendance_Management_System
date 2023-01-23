@@ -85,6 +85,51 @@ namespace Student_Attendance_Management_System.Main.Setting
             }
         }
 
+        private void btnSubjectFile_Click(object sender, EventArgs e)
+        {
+            SetFilePath();
+
+
+            if (filePath != null)
+            {
+
+                using (var excel = new ExcelPackage(new FileInfo(filePath)))
+                {
+                    // Get the first worksheet in the Excel file
+                    var worksheet = excel.Workbook.Worksheets[0];
+
+                    if (worksheet.Dimension.End.Column == 4)
+                    {
+                        Database.insert(@"DELETE FROM `subject` WHERE 1");
+
+
+                        // Loop through the rows in the worksheet
+                        for (int row = 1; row <= worksheet.Dimension.End.Row; row++)
+                        {
+                            // Get the values in the 1 to 4 columns
+                            string col1 = worksheet.Cells[row, 1].Value.ToString();
+                            string col2 = worksheet.Cells[row, 2].Value.ToString();
+                            string col3 = worksheet.Cells[row, 3].Value.ToString();
+
+
+
+
+                            Database.insert(@"INSERT INTO `subject`(`subjectCode`, `sunjectName`, `batch`) VALUES ('" + col1 + "', UPPER('" + col2 + "'), '" + col3 + "')");
+                            // Insert the values into the database
+
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Subject Table and this Worksheets Column count not match.");
+                    }
+
+
+
+                }
+            }
+        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -251,5 +296,7 @@ namespace Student_Attendance_Management_System.Main.Setting
             this.Hide();
             frmLectures.ShowDialog();
         }
+
+        
     }
 }

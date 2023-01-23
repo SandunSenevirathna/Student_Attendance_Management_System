@@ -120,6 +120,12 @@
     <Compile Include="Main\Collect\frmCollect.Designer.cs">
       <DependentUpon>frmCollect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\Collect\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Collect\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Menu\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Collect\frmCollect.resx">
       <DependentUpon>frmCollect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Collect\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Menu\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
@@ -328,6 +337,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_barcode_reader_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_100px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

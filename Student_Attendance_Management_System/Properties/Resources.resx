@@ -139,6 +139,9 @@
   <data name="icons8_classroom_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_classroom_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5078a05eb1b6847d93383eaa4c0ed500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5078a05eb1b6847d93383eaa4c0ed500.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_barcode_reader_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_barcode_reader_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,9 +163,6 @@
   <data name="icons8_Students_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Students_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_settings_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_settings_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_user_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_user_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +183,9 @@
   </data>
   <data name="little-girl-reading-book-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\little-girl-reading-book-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_barcode_reader_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_barcode_reader_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_line_chart_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_line_chart_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +217,10 @@
   <data name="icons8_students_100px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_students_100px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5078a05eb1b6847d93383eaa4c0ed500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5078a05eb1b6847d93383eaa4c0ed500.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_settings_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_settings_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_barcode_reader_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_barcode_reader_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_search_100px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_search_100px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

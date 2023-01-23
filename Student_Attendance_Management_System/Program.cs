@@ -23,8 +23,9 @@ namespace Student_Attendance_Management_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmLectures());
-            //Application.Run(new frmCollect());
-          Application.Run(new frmMenu());
+            Application.Run(new frmCollect());
+            //Application.Run(new frmMenu());
+            //Application.Run(new frmSearch(t));
             //Application.Run(new frmLogin());
         }
     }
